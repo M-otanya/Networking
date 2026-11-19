@@ -39,14 +39,3 @@ variable "vpc_cidr" {
 #   }
 # }
 #
-# ============================================================
-# PHASE 7 - EC2 instance sizing (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
-
-# ============================================================
-# # Start with a small instance; check Free Tier eligibility and prices.
-# variable "ec2_instance_type" {
-#   description = "Instance type for training web and application servers"
-#   type        = string
-#   default     = "t3.micro"
-# }
