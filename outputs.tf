@@ -37,7 +37,6 @@ output "production_vpc_cidr" {
 #
 # ============================================================
 # PHASE 3 - Internet and public route outputs (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
 
 # ============================================================
 # output "internet_gateway_id" { value = aws_internet_gateway.production.id }
@@ -45,15 +44,13 @@ output "production_vpc_cidr" {
 
 # ============================================================
 # PHASE 4 - NAT and private route outputs (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
-
 # ============================================================
 # output "nat_gateway_id" { value = aws_nat_gateway.production.id }
 # output "private_route_table_id" { value = aws_route_table.private.id }
 
 # ============================================================
 # PHASE 5 - Security group identifiers (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
+
 
 # ============================================================
 # output "web_security_group_id" { value = aws_security_group.web.id }
@@ -62,7 +59,7 @@ output "production_vpc_cidr" {
 
 # ============================================================
 # PHASE 6 - Network ACL identifiers (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
+
 
 # ============================================================
 # output "public_nacl_id" { value = aws_network_acl.public.id }
@@ -70,7 +67,7 @@ output "production_vpc_cidr" {
 
 # ============================================================
 # PHASE 7 - Web and application instance identifiers (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
+
 
 # ============================================================
 # output "web_instance_ids" { value = aws_instance.web[*].id }

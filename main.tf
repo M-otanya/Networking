@@ -15,8 +15,6 @@ resource "aws_vpc" "production" {
 # PHASE 2 - Public and private subnet segmentation (DISABLED)
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
 # ============================================================
-# To activate: select the Phase 2 block, then Ctrl+/ in VS Code.
-# ============================================================
 
 # # Discover two currently available Availability Zones in the AWS region.
 # # The AWS account determines which zone names are returned.
@@ -57,7 +55,6 @@ resource "aws_vpc" "production" {
 #
 # ============================================================
 # PHASE 3 - Internet Gateway and public routing (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association
@@ -87,7 +84,6 @@ resource "aws_vpc" "production" {
 
 # ============================================================
 # PHASE 4 - NAT Gateway and private routing (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/nat_gateway
 # ============================================================
@@ -193,7 +189,6 @@ resource "aws_vpc" "production" {
 
 # ============================================================
 # PHASE 6 - Public and private network ACLs (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_acl
 # ============================================================
 # # Explicit subnet NACLs for inspection and future rule hardening.
@@ -245,7 +240,6 @@ resource "aws_vpc" "production" {
 
 # ============================================================
 # PHASE 7 - EC2 launch templates and web/app instances (DISABLED)
-# Uncomment only when demonstrating this phase. Keep previous phases active.
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_template
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter
