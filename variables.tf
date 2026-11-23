@@ -44,7 +44,6 @@ variable "vpc_cidr" {
 # PHASE 3 - Public internet routing (DISABLED)
 # Registry: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
 # The existing Phase 3 route uses a hardcoded destination.
-# Use this optional input when refactoring that resource.
 # ============================================================
 # variable "internet_route_cidr" {
 #   description = "Default destination for internet-bound IPv4 traffic"
